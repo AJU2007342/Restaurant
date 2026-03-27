@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andhra's Kitchen</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style1.css">
 </head>
 
 <body>
     <div class="nav">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="hamburger">☰</label>
         <div class="opts">
             <a href="#about">About us</a>
             <a href="#menu">Menu</a>
@@ -64,8 +62,8 @@
         <h2>Our Items🍗</h2>
         <div class="men-container-list">
             <div class="Starters">
-                <h2>Starters 🍗</h2> <br><br>
-                <ul style="font-size: 25px;">
+                <h2>Starters 🍗</h2>
+                <ul class="menu-list">
                     <li>Chicken 65 - ₹180</li>
                     <li>Chilli Chicken - ₹190</li>
                     <li>Pepper Chicken - ₹200</li>
@@ -79,8 +77,8 @@
                 </ul>
             </div>
             <div class="Mc">
-                <h2>Biryani 🍚</h2> <br>
-                <ul style="font-size: 25px; margin-top: 60px;">
+                <h2>Biryani 🍚</h2>
+                <ul class="menu-list">
                     <li>Chicken Biryani - ₹220</li>
                     <li>Mutton Biryani - ₹280</li>
                     <li>Egg Biryani - ₹180</li>
@@ -94,8 +92,8 @@
                 </ul>
             </div>
             <div class="Cur">
-                <h2>Curry's 🍛</h2> <br>
-                <ul style="font-size: 25px;margin-top: 60px;">
+                <h2>Curry's 🍛</h2>
+                <ul class="menu-list">
                     <li>Chicken Curry - ₹210</li>
                     <li>Mutton Curry - ₹290</li>
                     <li>Gongura Chicken - ₹220</li>
@@ -109,8 +107,8 @@
                 </ul>
             </div>
             <div class="ml">
-                <h2>Meal's 🍽️</h2> <br>
-                <ul style="font-size: 25px;margin-top: 60px;">
+                <h2>Meal's 🍽️</h2>
+                <ul class="menu-list">
                     <li>Veg Meals - ₹150</li>
                     <li>Special Veg - ₹180</li>
                     <li>Chicken Meals - ₹220</li>
@@ -128,7 +126,7 @@
     <section id="review" class="rev">
         <h2>What our Customers Say??</h2>
         <div class="rew-container">
-            <ul style="font-size: 29px;color: rgb(232, 214, 183);">
+            <ul class="review-list">
                 <li>"Amazing Andhra food! The biryani was full of flavor and perfectly cooked."</li>
                 <li>"Loved the spicy chicken curry. Feels like authentic village style cooking."</li>
                 <li>"Great ambience and friendly staff. Food was delicious and fresh."</li>
@@ -146,12 +144,12 @@
         <h2>Reserve Now 📅!!</h2>
         <div class="form-container">
             <form action="https://formspree.io/f/meepoard" method="post">
-                <input type="Name" name="name" placeholder="Your Name" required><br>
-                <input type="email" name="email" placeholder="Your email id" required><br>
-                <input type="tel" name="tel" name="phone" pattern="[0-9]{10}" placeholder="Contact no" required>
-                <input type="date" name="date">
-                <br>
-                <select name="people" required>
+                <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                <input type="email" name="email" class="form-input" placeholder="Your email id" required>
+                <input type="tel" name="phone" class="form-input" pattern="[0-9]{10}" placeholder="Contact no" required>
+                <input type="date" name="date" class="form-input">
+
+                <select name="people" class="form-input" required>
                     <option>No of Persons</option>
                     <option>1 Person</option>
                     <option>2 People</option>
@@ -164,9 +162,7 @@
                     <option>9 People</option>
                     <option>10 People</option>
                 </select>
-                <br><br>
-                <button type="submit">Reserve Table</button>
-
+                <button type="submit" class="btn-submit">Reserve Table</button>
             </form>
         </div>
     </section>
